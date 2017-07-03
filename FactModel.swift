@@ -1,0 +1,90 @@
+//
+//  FactModel.swift
+//  FunFacts
+//
+//  Created by Tobi A on 2016-05-02.
+//  Copyright © 2016 Tobi A. All rights reserved.
+//
+
+import GameKit
+struct FactModel {
+    let facts = ["There are 54 countries and one “non-self governing territory”, the Western Sahara, in Africa.",
+                 "All of Africa was colonized by foreign powers during the “scramble for Africa”, except Ethiopia and Liberia.",
+                 "Before colonial rule Africa comprised up to 10,000 different states and autonomous groups with distinct languages and customs.",
+                 "The Pharaonic civilization of ancient Egypt is one of the world’s oldest and longest-lasting civilizations.",
+                 "African continent is the world’s oldest populated area.",
+                 "Arabic is spoken by 170 million people on the continent, followed in popularity by English (130 million), Swahili (100), French (115), Berber (50), Hausa (50), Portuguese (20) and Spanish (10).",
+                 "Over 25% all languages are spoken only in Africa with over 2,000 recognised languages spoken on the continent.",
+                 "Africa is the second most populous continent with about 1.1 billion people or 16% of the world’s population. Over 50% of Africans are under the age of 25.",
+                 "The continent’s population will more than double to 2.3 billion people by 2050.",
+                 "Africa is the world’s poorest and most underdeveloped continent with a continental GDP that accounts for just 2.4% of global GDP.",
+                 "Almost 40% of adults in Africa are illiterate – two-thirds are women. Adult literacy rates are below 50% in Benin, Burkina Faso, Chad, Ethiopia, Guinea, Mali, Niger, Senegal, Sierra Leone and The Gambia.",
+                "Over 25 million people are HIV-positive on the continent and over 17 million have died of the disease already.",
+                "The Second Congo War claimed over 5.4 million lives and is the deadliest worldwide conflict since World War II.",
+                "There are fewer people with internet connections in Africa than there are in just New York City.",
+                "Approximately 90% of all cases of malaria worldwide occur in Africa, accounting for 24% of all child deaths in sub-Saharan Africa.",
+                "Africa is the world’s second largest continent covering about over 30 million square kilometers",
+                "The Sahara is the largest desert in the world and is bigger than the continental USA.",
+                "Africa is the world’s hottest continent with deserts and drylands covering 60% of land surface area (e.g. Kalahari, Sahara and Namib).",
+                "Africa is the world’s second driest continent (after Australia).",
+                "Africa has approximately 30% of the earth’s remaining mineral resources.",
+                "Nigeria is fourth largest oil exporter in the world, and Africa’s biggest oil producer with about 2.2 million barrels produced every day. Top 10 oil producers in order of total exports: Nigeria, Algeria, Angola, Libya, Egypt, Sudan, Equatorial Guinea, Republic of Congo, Gabon, South Africa.",
+                "The continent has the largest reserves of precious metals with over 40% of the gold reserves, over 60% of the cobalt, and 90% of the platinum reserves.",
+                "China is Africa’s top trade partner with Sino-African trade volumes now nearing $200 billion per year.",
+                "China’s direct investment in Africa exceeds $50 billion.",
+                "Neocolonialism is a real threat with over 1 million Chinese citizens on the African continent. Angola alone has a population of over 350,000 Chinese.",
+                "Over 55% of Africa’s labour force working in food production with vast areas of arable and pastoral lands supporting agricultural economies.",
+                "Over 90% of soils are unsuitable for agriculture and only 0.25% has moderate to low potential for sustainable farming.",
+        "Rainfall variability is very high – from 0 mm/year in the Sahara to 9,500 mm/year near Mount Cameroon.",
+        "Over 240 million Africans suffer from chronic undernourishment.",
+        "Water scarcity impacts the lives of over 300 million Africans, of whom approximately 75% of Africans rely on groundwater as their primary source of drinking water. Global warming is aggravating the situation.",
+        "Limited groundwater represents only 15% of the continent’s total renewable water resources. New discoveries of groundwater reserves in large sedimentary basins in Libya, Algeria and Chad may slack Africa’s growing thirst for the next few decades.",
+        "Productivity of about 65% of the continent’s agricultural lands has declined significantly with vast tracts of land have been degraded by erosion, poor land management practices, mining and pollution over the last 50 years.",
+        "Some landscapes are estimated to lose over 50 metric tonnes of soil per hectare per year due to neglect and desertification.",
+        "Over 30% of Africa’s pastural land and almost 20% of all forests and woodlands are classified as moderately or heavily-degraded.",
+        "Deforestation rates in Africa are twice the average for the rest of the world with more than four million hectares of primary forest disappearing every year. Countries like Kenya, malawi and Zambia have 1-5% of the primary forests remaining. Forests used to cover over 20% of Africa’s 30 million square kilometers with almost all currently being destroyed and degraded by commercial and subsistence logging, as well as land conversion to plantations, agriculture, mines, roads and settlements.",
+        "Some 60% of the tropical forests in the Congo Basin are considered commercially exploitable.",
+        "Six of the top ten countries with the largest annual net loss of forested area are in Africa.",
+        "Primary forests shrink by on average 40,000 square kilometres (or 0.6% of total remaining forest cover) each year with most significant losses in heavily-forested countries such as the Democratic Republic of Congo and Gabon.",
+        "Over 1,270 large dams have been built along the continent’s many rivers.",
+        "Lake Victoria is the largest lake in Africa and the second-largest freshwater lake in the world.",
+        "Africa has the most extensive biomass burning in the world, yet only emits about 4% of the world’s total carbon dioxide emissions.",
+        "Africa has eight of the 11 major biomes and the largest-remaining populations of lion, elephant, rhinoceros, cheetah, hyena, leopard and hundreds of other species.",
+        "Megafauna like giraffe, zebra, gorilla, hippopotamus, chimpanzee and wildebeest are unique to the continent and only found here.",
+        "Lake Malawi has more fish species than any other freshwater system on earth.",
+        "The Nile River is the longest river in the world with a total length of 6,650 kilometres.",
+        "Africa has over 85% of the world’s elephants and over 99% of the remaining lions are on the African continent.",
+        "Eight of Conservation International’s 34 biodiversity hotspots are in Africa.",
+        "The Serengeti (Tanzania) hosts the world’s largest wildlife migration on Earth with over 750,000 zebra marching ahead of 1.2 million wildebeest as they cross this amazing landscape.",
+        "Thera are over 3,000 protected areas in Africa, including 198 Marine Protected Areas, 50 Biosphere Reserves, 129 UNESCO World Heritage Sites, and 80 RAMSAR “Wetlands of International Importance”.",
+        "Africa is home to the world’s largest living land animal, the African elephant, which can weigh up to 7 tons.",
+        "Africa has over 25% of the world’s bird species.",
+        "The African continent has the second largest population in the world, at about one billion people.",
+        "Well over one thousand languages are spoken by the people of Africa. Some estimates put this number closer to two thousand.",
+        "The largest religion in Africa is Islam, followed by Christianity.",
+        "The African population is approximately 14.72% of the world's population (as of 2009).",
+        "The oldest human remains ever discovered were found in Ethiopia. They are approximately 200,000 years old.",
+        "The longest river in the world, the Nile (4,132 miles), is located in Africa.",
+        "Africa has the world's largest desert, the Sahara, which is almost the size of the United States.",
+        "Victoria Falls is the largest waterfall in Africa; it is 355 feet high and one mile wide.",
+        "Mount Kilimanjaro is the highest mountain on the continent. It towers over 19,300 feet, which is so tall that glaciers can be found at its summit even though the mountain is near the equator.",
+        "Madagascar is the largest island in Africa and the fourth largest island in the world. It is in the Indian Ocean off the East coast of Africa.",
+        "Africa is the second largest continent on earth, approximately 11.7 million square miles.",
+        "Africa straddles the equator and is the only continent to extend from the northern temperate zone to the southern temperate zone.",
+        "Africa is the hottest continent on earth.",
+        "Sudan is Africa's largest country (968,000 square miles).",
+        "Africa covers 6 percent of the earth's total surface and 20.4 percent of the total land area.",
+        "Cairo is the continent's largest city.",
+        "Long before humans were around (the early Mesozoic Era) Africa was joined to the other continents in a massive continent called Pangaea. Over millions of years this huge continent broke apart shaping the world landscape as we know it today.",
+        "The worlds largest land animal is the African elephant.",
+        "The worlds tallest animal, the giraffe, lives in Africa.",
+        "The fastest land animal in the world, the cheetah, lives in Africa.",
+        "Africa is home to the worlds largest reptile, the Nile crocodile.",
+        "The gorilla, which can be found in the continents jungles, is the worlds largest primate.",
+                "Facts were gotten from http://www.interesting-africa-facts.com/ and http://voices.nationalgeographic.com/2013/10/31/getting-to-know-africa-50-facts/"]
+    
+    func getRandomFact() -> String {
+        let randomNumber = GKRandomSource.sharedRandom().nextIntWithUpperBound(facts.count)
+        return facts[randomNumber]
+    }
+}
